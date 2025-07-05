@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI";
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trigger-btn {
+  padding: 12px 24px;
+  background-color: #2e7d32;
+  color: #fafafa;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.trigger-btn:hover {
+  background-color: #1b5e20;
+}
+
+.alert-container {
+  width: 100%;
+  background-color: #ffab91;
+  padding: 16px;
+  border-bottom: 1px solid #f5c6cb;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-100%); /*This is for hiding the alert box.*/
+  transition: transform 0.3s ease-in-out;
+}
+
+.alert-container.show {
+  transform: translateY(0); /*This is for show the alert box.*/
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .alert-container {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .trigger-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .close-btn {
+    font-size: 18px;
+  }
+}
