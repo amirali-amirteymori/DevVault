@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo-js.png"
+      type="image/x-icon"
+    />
+    <title>Toast | Popup</title>
+  </head>
+  <body>
+    <button class="trigger-btn" id="show-toast">Show Toast Notification</button>
+
+    <div class="toast" id="toast">
+      <div class="toast-header">
+        <button class="close-icon" id="close-icon">&times;</button>
+      </div>
+
+      <img
+        src="assets/img/ANA DE ARMAS 7.webp"
+        class="toast-img"
+        alt="Notification image"
+      />
+      <div class="toast-text">Your notification has been received!</div>
+
+      <div class="toast-buttons">
+        <button class="accept-btn" id="accept-btn">Accept</button>
+        <button class="close-btn" id="close-btn">Close</button>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
